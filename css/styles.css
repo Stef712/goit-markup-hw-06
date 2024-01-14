@@ -573,11 +573,11 @@ body {
   align-items: baseline;
 }
 
-.footer-subscribe {
-  margin-left: 80px;
+.footer-sub {
+  margin-left: auto;
 }
-
-.footer-subscribe-text {
+.footer-subscribe-title {
+  margin-bottom: 16px;
   color: white;
   font-size: 16px;
   font-family: Roboto;
@@ -585,7 +585,6 @@ body {
   line-height: 24px;
   letter-spacing: 0.32px;
   word-wrap: break-word;
-  margin-bottom: 16px;
 }
 
 .footer-form {
@@ -593,31 +592,40 @@ body {
   align-items: center;
   gap: 24px;
 }
-
-.footer-label {
+.footer-input {
   width: 264px;
   height: 40px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 1px white solid;
-}
-
-.footer-input {
-  color: white;
-  font-size: 12px;
-  font-family: Roboto;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.48px;
-  word-wrap: break-word;
-  width: 100%;
-  height: 100%;
+  border: 1px solid #ffffff;
   background-color: transparent;
-  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  margin-right: 24px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
 }
 
 .footer-input::placeholder {
-  color: white;
+  color: #ffffff;
+}
+
+.footer-subscribe-btn {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 
 .footer-subscribe-icon {
@@ -625,29 +633,14 @@ body {
   fill: white;
 }
 
-.footer-button {
-  color: white;
-  font-size: 16px;
-  font-family: Roboto;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.64px;
-  word-wrap: break-word;
-  background-color: var(--accent-color);
-  cursor: pointer;
-  min-width: 165px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  border: none;
-  padding: 8px 24px;
-}
-
-.footer-button:hover,
-.footer-button:focus {
-  background-color: #404bbf;
+.footer-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
+  margin-right: 24px;
 }
 
 /* Modal */
@@ -681,7 +674,7 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -731,7 +724,7 @@ body {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--main-title-color);
+  color: #2e2f42;
   margin-bottom: 16px;
   margin-top: 40px;
 }
